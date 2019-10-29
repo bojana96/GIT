@@ -1,0 +1,15 @@
+.tekst{
+
+    vertical-align: middle;
+    position: center;
+    font-size: 25px;
+    font-family: "Calibri Light";
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.boja{
+    background-color: grey;
+}
