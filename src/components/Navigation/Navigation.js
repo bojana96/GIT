@@ -35,7 +35,7 @@ const Navigation = (props) => {
                 </NavItem>
 
             <NavItem>
-                    <NavLink href="/aboutUs"><b>AboutUs</b></NavLink>
+                    <NavLink href="/aboutUs"><b>About</b></NavLink>
             </NavItem>
                 <NavItem>
                 <NavLink href="/donate"><b>Donate</b></NavLink>
@@ -44,7 +44,10 @@ const Navigation = (props) => {
                     <NavLink href="/events"><b>Events</b></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/contactUs"><b>ContactUs</b></NavLink>
+                    <NavLink href="/contactUs"><b>Contact</b></NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="/testimonials"><b>Testimonials</b></NavLink>
                 </NavItem>
             </Nav>
 

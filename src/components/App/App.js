@@ -19,11 +19,10 @@ import {
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
 import FooterPage from '../Footer/Footer';
-<<<<<<< HEAD
-import EventList from '../Event/EventList';
-=======
+import Testimonials from '../Testimonials/Testimonials';
 
->>>>>>> d708417d920a14057cb3ed8ac8b7a347f949bddc
+
+
 
 const STATE_STORAGE_KEY = 'state';
 class App extends React.Component {
@@ -100,15 +99,12 @@ class App extends React.Component {
                   <Route exact path="/addevent" render={() => <AddEvent events={this.state.events} addNewEvent={this.addNewEvent}/>}/>
                   <Route path="/contactUs" component={ContactUs}/>
                   <Route path="/events" component={EventList}/>
+                  <Route path="/testimonials" component={Testimonials}/>
                   <Route path="/" exact component={HomePage}/>
               </Switch>
               </Router>
-<<<<<<< HEAD
 <FooterPage/>
             
-=======
-            <FooterPage/>
->>>>>>> d708417d920a14057cb3ed8ac8b7a347f949bddc
           </div>
   );
 }
