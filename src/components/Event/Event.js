@@ -10,11 +10,6 @@ const Card = styled.div`
     background-color: white;
       font-family: Vedana;
       cursor: pointer;
-
-   
-    
-
-
 `;
 
 const Image = styled.div``;
