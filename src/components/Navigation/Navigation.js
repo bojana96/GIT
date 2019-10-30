@@ -15,7 +15,7 @@ const Navigation = (props) => {
         <div className="bla">
             <Nav>
                 <NavItem >
-               
+                        <a href="/">
                         < img
                             src={Logo}
                             width="200"
@@ -25,6 +25,7 @@ const Navigation = (props) => {
                             alt="Empower logo"
                             onClick={() => Redirect("/")}
                     />
+                    </a>
 
                 </NavItem>
                 <NavItem>
