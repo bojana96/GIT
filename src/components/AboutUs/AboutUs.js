@@ -5,11 +5,12 @@ import Picture2 from '../../Images/Maja.jpg';
 import Picture3 from '../../Images/Bojana.jpg';
 import OurPurpose from "./OurPurpose";
 import Team from "./Team";
+import Purpose from "./Purpose";
 
 const AboutUs = () => {
     return (
   <div>
-        <OurPurpose/>
+        <Purpose/>
   <br/>
         <Team/>
   </div>
