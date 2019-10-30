@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
+import FooterPage from '../Footer/Footer';
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
                   <Route path="/" exact component={HomePage}/>
               </Switch>
               </Router>
-
+            <FooterPage/>
           </div>
   );
 }

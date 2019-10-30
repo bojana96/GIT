@@ -9,11 +9,11 @@ import OurPurpose from "./OurPurpose";
 const Team= () => {
     return (
         <div className="boja">
-            <MDBCard className="text-center" >
+            <MDBCard className="text-center"  >
 
-                    <h2 className="h1-responsive font-weight-bold my-5">
-                        Our amazing team
-                    </h2>
+                    <h3 className="h1-responsive font-weight-bold my-5">
+                        <i>Our amazing team</i>
+                    </h3>
 
                     <MDBRow>
                         <MDBCol md="4" className="mb-md-0 mb-5">
