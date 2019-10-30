@@ -15,7 +15,7 @@ const Navigation = (props) => {
         <div className="bla">
             <Nav>
                 <NavItem >
-
+               
                         < img
                             src={Logo}
                             width="200"
@@ -39,6 +39,9 @@ const Navigation = (props) => {
                 <NavItem>
                 <NavLink href="/donate"><b>Donate</b></NavLink>
             </NavItem>
+                <NavItem>
+                    <NavLink href="/events"><b>Events</b></NavLink>
+                </NavItem>
                 <NavItem>
                     <NavLink href="/contactUs"><b>ContactUs</b></NavLink>
                 </NavItem>
