@@ -15,7 +15,8 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
-
+import FooterPage from '../Footer/Footer';
+import EventList from '../Event/EventList';
 
 
 function App() {
@@ -26,13 +27,15 @@ function App() {
               <Navigation/>
               <Router>
               <Switch>
+             
                   <Route path="/aboutUs" component={AboutUs}/>
                   <Route path="/donate" component={Donate}/>
                   <Route path="/contactUs" component={ContactUs}/>
+                  <Route path="/events" component={EventList}/>
                   <Route path="/" exact component={HomePage}/>
               </Switch>
               </Router>
-
+<FooterPage/>
             
           </div>
   );
