@@ -6,10 +6,12 @@ import Navigation from "../Navigation/Navigation";
 import Logo from "../../Images/Logo.jpg";
 import './HomePage.css';
 
+
 const HomePage = () => {
     return (
-        <div className="body">
-            <img src={Logo} className="logo"/>
+        <div className="background">
+             
+         
         </div>
     );
 }

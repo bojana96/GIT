@@ -1,8 +1,15 @@
 .bla{
 
-        background: linear-gradient(to right, white 30%,#0F0559 43%, #4C2985 75% ,#8213D0 85%);
+        background: linear-gradient(to right, white 30%, #E4CFBE 75% ,#E4D0C0 100%);
+        opacity: 0.8;
         height: 60px;
         font-size: 120%;
         word-spacing: 30px;
+
+}
+
+.nav-link {
+        color: 	#171848;
+        margin-top: 7px;
 }
 

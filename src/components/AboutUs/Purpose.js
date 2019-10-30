@@ -37,25 +37,25 @@ class  Purpose extends React.Component{
                 <MDBCol md="4">
                   <MDBIcon icon="donate" size="4x" className="blue-text" />
                   <h5>
-                  <a href="/donate" className="font-weight-bold my-4">Donate</a> </h5>
+                  <a color="purple" href="/donate" className="font-weight-bold my-4">Donate</a> </h5>
                   <h6 className="grey-text mb-md-0 mb-5">
                    Why do we donate? <br/>
                    <li>Help Those in need</li>
-                  <li>Experience More Pleasure</li> 
-                  <li>Bring More Meaning to Somebodys' Life</li> 
+                   <li>Experience More Pleasure</li> 
+                   <li>Bring More Meaning to Somebodys' Life</li> 
                    <li>Motivate Friends and Family</li>
-                  <li>Realize that Every Little Bit Helps</li> 
+                   <li>Realize that Every Little Bit Helps</li> 
                    
                   </h6>
                 </MDBCol>
                 <MDBCol md="4">
                   <MDBIcon far icon="comments" size="3x" className="orange-text" />
                   <h5 className="font-weight-bold my-4">Support</h5>
-                  <p className="grey-text mb-md-0 mb-5">
+                  <h6 className="grey-text mb-md-0 mb-5">
                   Women don’t just deserve more opportunities to advance -- they’ve earned them.<br/>
-                Now, it’s up to businesses to fight unconscious biases and provide women with <br/>
-                the resources and pathways they need to make the most of their talents.
-                  </p>
+                  Now, it’s up to businesses to fight unconscious biases and provide women with <br/>
+                  the resources and pathways they need to make the most of their talents.
+                  </h6>
                 </MDBCol>
               </MDBRow>
             </section>
