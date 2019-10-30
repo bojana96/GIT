@@ -1,6 +1,6 @@
 .fixed{
     max-width: 800px;
-    //margin-right: 20px;
+  
     margin-top: 140px;
 }
 
@@ -10,5 +10,5 @@
     right: 0;
     height: 700px;
     opacity:0.5;
-    margin-bottom: -100px;
+    margin-bottom: 100px;
 }
