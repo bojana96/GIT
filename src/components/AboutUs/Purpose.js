@@ -37,7 +37,7 @@ class  Purpose extends React.Component{
                 <MDBCol md="4">
                   <MDBIcon icon="donate" size="4x" className="blue-text" />
                   <h5>
-                  <a href="/donate" className="font-weight-bold my-4">Donate</a> </h5>
+                  <a color="purple" href="/donate" className="font-weight-bold my-4">Donate</a> </h5>
                   <h6 className="grey-text mb-md-0 mb-5">
                    Why do we donate? <br/>
                    <li>Help Those in need</li>

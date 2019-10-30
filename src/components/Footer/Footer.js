@@ -1,16 +1,21 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBIcon, MDBCardFooter,MDBBtn } from "mdbreact";
+import './Footer.css';
 
 const FooterPage = () => {
   return (
-   <MDBFooter color="purple">
-     
-      <div className="footer-copyright text-center py-3" >
-        <MDBContainer color="purple">
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+    <div className="futer">
+   <MDBCardFooter>
+    
+      <div>
+        <MDBContainer className="text-right">
+         
+      
         </MDBContainer>
+      </div> 
+      
+      </MDBCardFooter>
       </div>
-    </MDBFooter>
   );
 }
 

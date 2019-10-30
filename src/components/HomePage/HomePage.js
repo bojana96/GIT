@@ -5,11 +5,12 @@ import React from "react";
 import Navigation from "../Navigation/Navigation";
 import Logo from "../../Images/Logo.jpg";
 import './HomePage.css';
+import BackGround from "../../Images/BackGround.jpg";
 
 const HomePage = () => {
     return (
-        <div className="body">
-            <img src={Logo} className="logo"/>
+        <div className="background">
+         
         </div>
     );
 }

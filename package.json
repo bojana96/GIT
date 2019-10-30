@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.24.3",
     "google-map-react": "^1.1.5",
     "mapbox-gl": "^1.5.0",
     "mdbreact": "^4.21.1",

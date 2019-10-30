@@ -1,7 +1,19 @@
-.logo {
+/*.logo {
     height:900px;
     width: 100%;
     overflow: auto;
 
 
+}*/
+.background {
+    background-image: url("https://www.vladdinvapor.com/media/magefan_blog/08.jpg");
+    
+        
+        height: 90vh;
+        width:auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity:0.8;
+    
 }
