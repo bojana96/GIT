@@ -10,6 +10,7 @@ import BackGround from "../../Images/BackGround.jpg";
 const HomePage = () => {
     return (
         <div className="background">
+             
          
         </div>
     );
