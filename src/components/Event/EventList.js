@@ -45,7 +45,9 @@ class EventList extends React.Component {
 
     render() {
         const { events } = this.props;
-        const visibleEvents = events.slice(0, 3);
+        console.log("EVENTz", events)
+        console.log("VID OBJEKT", typeof events, {events})
+        const visibleEvents = events
 
         return (
             <div>

@@ -5,8 +5,8 @@ import {  MDBRow, MDBCol, MDBIcon, MDBBt,MDBView } from "mdbreact";
 
 
 class AddEvent extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             name: '',
             date: '',
@@ -33,6 +33,14 @@ class AddEvent extends React.Component {
 
     addEvent() {
         const { name, date, time, place, description } = this.state;
+
+        console.log("Submit ", {
+            name,
+            date,
+            time,
+            place,
+            description
+        })
         this.props.addNewEvent({
             name,
             date,
@@ -128,36 +136,36 @@ class AddEvent extends React.Component {
 
         let valid = true;
 
-        const name = this.state.name;
-        const date = this.state.date;
-        const time = this.state.time;
-        const description = this.state.description;
+        // const name = this.state.name;
+        // const date = this.state.date;
+        // const time = this.state.time;
+        // const description = this.state.description;
 
-        if (!name || !date || !time || !description) {
-            this.setState({
-                ...this.state,
-                errorMessage: "Please fill in all required fields to login."
-            });
-            valid = false;
-        } else if (description.length > 150) {
-            this.setState({
-                ...this.state,
-                errorMessage: "Your description is too long"
-            });
-            valid = false;
-        } else if (!this.isValidDate(date)) {
-            this.setState({
-                ...this.state,
-                errorMessage: "Invalid date format"
-            });
-            valid = false;
-        } else if (!this.isValidTime(time)) {
-            this.setState({
-                ...this.state,
-                errorMessage: "Invalid time format"
-            });
-            valid = false;
-        }
+        // if (!name || !date || !time || !description) {
+        //     this.setState({
+        //         ...this.state,
+        //         errorMessage: "Please fill in all required fields to login."
+        //     });
+        //     valid = false;
+        // } else if (description.length > 150) {
+        //     this.setState({
+        //         ...this.state,
+        //         errorMessage: "Your description is too long"
+        //     });
+        //     valid = false;
+        // } else if (!this.isValidDate(date)) {
+        //     this.setState({
+        //         ...this.state,
+        //         errorMessage: "Invalid date format"
+        //     });
+        //     valid = false;
+        // } else if (!this.isValidTime(time)) {
+        //     this.setState({
+        //         ...this.state,
+        //         errorMessage: "Invalid time format"
+        //     });
+        //     valid = false;
+        // }
 
         if (valid) {
             const add = this.addEvent;

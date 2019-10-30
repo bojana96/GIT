@@ -61,7 +61,7 @@ class App extends React.Component {
             events: [...this.state.events, event]
         };
         this.updateLocalStorageWithState(updatedState);
-        this.setState(updatedState);
+        this.setState(updatedState, console.log(this.state.events));
     }
 
 
@@ -75,8 +75,10 @@ class App extends React.Component {
         if (!savedState) {
             this.updateLocalStorageWithState(this.state);
         } else {
-            this.setState(JSON.parse(savedState));
+            this.setState({events:JSON.parse(savedState).events}, console.log(this.state.events));
         }
+        console.log(savedState, JSON.parse(savedState))
+        setTimeout(()=>console.log(this.state.events),3000)
     }
     render() {
         const { events } = this.state;
@@ -90,7 +92,7 @@ class App extends React.Component {
                   <Route path="/aboutUs" component={AboutUs}/>
                   <Route path="/donate" component={Donate}/>
                   <Route exact path="/events" render={() => <EventList events={events}/>}/>
-                  <Route exact path="/addevent" render={() => <AddEvent events={this.state.events} addEvent={this.addEvent}/>}/>
+                  <Route exact path="/addevent" render={() => <AddEvent events={this.state.events} addNewEvent={this.addNewEvent}/>}/>
                   <Route path="/contactUs" component={ContactUs}/>
                   <Route path="/" exact component={HomePage}/>
               </Switch>
