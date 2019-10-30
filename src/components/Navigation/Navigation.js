@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Nav, NavItem,NavLink} from 'reactstrap';
 import Logo from "../../Images/Empower.png";
 import {Redirect } from 'react-router-dom'
+import './Navigation.css';
 const Navigation = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -11,15 +12,15 @@ const Navigation = (props) => {
 
     }
     return (
-        <div>
-            <Nav tabs >
-                <NavItem>
+        <div className="bla">
+            <Nav>
+                <NavItem >
 
                         < img
                             src={Logo}
-                            width="100"
+                            width="200"
                             align="right"
-                            height="40"
+                            height="50"
                             className="d-inline-block align-top"
                             alt="Empower logo"
                             onClick={() => Redirect("/")}
@@ -27,19 +28,19 @@ const Navigation = (props) => {
 
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/" >
+                    <NavLink href="/">
                         <b>Home</b>
                     </NavLink>
                 </NavItem>
 
             <NavItem>
-                    <NavLink href="/aboutUs"><b>About Us</b></NavLink>
+                    <NavLink href="/aboutUs"><b>AboutUs</b></NavLink>
             </NavItem>
                 <NavItem>
                 <NavLink href="/donate"><b>Donate</b></NavLink>
             </NavItem>
                 <NavItem>
-                    <NavLink href="/contactUs"><b>Contact Us</b></NavLink>
+                    <NavLink href="/contactUs"><b>ContactUs</b></NavLink>
                 </NavItem>
             </Nav>
 
