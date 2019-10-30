@@ -6,7 +6,8 @@
 
 }*/
 .background {
-    background-image: url("https://www.vladdinvapor.com/media/magefan_blog/08.jpg");
+    
+    background-image: url("./BackGround.jpg");
     
         
         height: 90vh;
@@ -14,6 +15,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        opacity:0.8;
+        opacity:0.6;
     
 }
