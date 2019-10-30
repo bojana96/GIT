@@ -1,0 +1,53 @@
+.add-event-container {
+    padding: 8% 30% 10% 30%;
+    background-color: whitesmoke;
+
+}
+
+.add-event-title {
+    font-size: 48px;
+    padding: 5%;
+    color: #691461;
+}
+
+.add-event-options {
+    margin-top: 2%;
+    margin-bottom: 7%;
+    padding: 3% 10% 3% 3%;
+    width: 100%;
+    margin-right: 25%;
+}
+
+#type {
+    margin: 10% 0 10% 10%;
+    width: 30%;
+    height: 50px;
+}
+
+.description {
+    padding: 1%;
+    width: 100%;
+    height: 100px;
+}
+
+.add-event-button {
+    margin: 10% 31% 10px 31%;
+    font-family: "Roboto", serif;
+    width: 38%;
+    height: 30px;
+    opacity: 0.8;
+    font-size: 16px;
+    color: #691461;
+}
+
+.add-event-button:hover {
+    background-color: #691461;
+    color: #f9f9f9;
+    opacity: 0.5;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+
+}
