@@ -1,7 +1,7 @@
 import React from "react";
 import Picture from '../../Images/Women.jpg';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
-import './Donate.css'
+import './Donate.css';
 
 const Donate = () => {
     return (

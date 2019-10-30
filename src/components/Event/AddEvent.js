@@ -1,7 +1,9 @@
 import React from 'react';
 import './AddEvent.css';
 import _ from "lodash";
-import {  MDBRow, MDBCol, MDBIcon, MDBBt,MDBView } from "mdbreact";
+import {  MDBRow, MDBCol, MDBIcon,  MDBInput, MDBBtn  } from "mdbreact";
+import { Fragment } from "react";
+import './Donate.css'
 
 
 class AddEvent extends React.Component {
@@ -184,13 +186,13 @@ class AddEvent extends React.Component {
 
         return (
             <div className="add-event-container">
-                <div className="add-event-title"><b>Create an event:</b></div>
+                <div className="add-event-title lead grey-text w-responsive text-center mx-auto mb-5" style={{  fontSize: 40, width: 'bold' }}><b>Create an event:</b></div>
                 <hr/>
 
                 <div>
                     <span style={{ color: 'red', fontSize: 14 }}>{errorMessage}</span>
                 </div>
-                <div className="lead grey-text w-responsive text-center mx-auto mb-5">
+                {/* <div className="lead grey-text w-responsive text-center mx-auto mb-5">
                     Name: <input className="add-event-options" placeholder="Add a short, clear name" type='text'
                                  name='name'
                                  value={this.state.name} onChange={this.inputName} required/><br/>
@@ -206,13 +208,76 @@ class AddEvent extends React.Component {
                                         type='text'
                                         name='description'
                                         value={this.state.description} onChange={this.inputDescription} required/><br/>
-                </div>
+                </div> */}
+            <h1 className="h5 text-center mb-4">  </h1>
+            <MDBRow>
+                <MDBCol md="6">
+                    <form>
+
+                        <div className="grey-text">
+                            <MDBInput
+                                label="Name"
+                                icon="calendar-check"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
+                                success="right"
+                            />
+                            <MDBInput
+                                label="DD/MM/YY"
+                                icon="calendar-alt"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
+                                success="right"
+                            />
+                            <MDBInput
+                                label="00:00"
+                                icon="clock"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
+                                success="right"
+                            />
+                            <MDBInput
+                                label="Location"
+                                icon="map-marked-alt"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
+                                success="right"
+                            />
+                            
+                            <MDBInput
+                                type="textarea"
+                                rows="3"
+                                label="Description"
+                                icon="pencil-alt"
+                            />
+                        </div>
+                        <div className="text-center">
+                            
+                        </div>
+                        </form>
+                </MDBCol>
+            </MDBRow>
+
+        
 
                 <hr/>
                 <br/>
-                <div>
+                {/* <div>
                     <button className="add-event-button" onClick={this.handleSubmit}>Add Event</button>
-                </div>
+                </div> */}
+                <Fragment>
+                    <MDBBtn color="primary" onClick={this.handleSubmit}>
+                    <MDBIcon icon="plus-square" className="mr-1" /> Create
+                    </MDBBtn>
+                </Fragment>
             </div>
         );
     }

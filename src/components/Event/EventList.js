@@ -5,6 +5,8 @@ import Event from './Event.js';
 import { Link } from 'react-router-dom';
 import cover from "../../Images/upcoming.gif";
 import './AddEvent.css';
+import {  MDBRow, MDBCol, MDBIcon,  MDBInput, MDBBtn , MDBContainer } from "mdbreact";
+
 
 
 
@@ -51,23 +53,42 @@ class EventList extends React.Component {
 
         return (
             <div>
+                
 
-                <EventsPageContainer>
-                    <img className="img" src={cover}/>
+            <MDBContainer>
+            <EventsPageContainer>
+                
+                        <img src={cover} className="img-fluid z-depth-1 " alt="" />
+                    
+
+
+
+                <MDBRow>
+                    <MDBCol md="12" className="mb-3">
+                
+                    {/* <img className="img" src={cover}/> */}
                     <Hr/>
                     <EventsContainer>
                         {
                             visibleEvents &&
                             visibleEvents.map((event) => <Event event={event} />)}
                     </EventsContainer>
-
+                    
                     <Hr/>
+                    
+
                     <Link to='/addevent/'> <b>ADD EVENT</b></Link>
                     <Hr/>
                     {/* <div>
                         <ExtendButton onClick={this.toggleExpanded}>{(this.state.expanded ? <i style={{fontSize: 50}}></i> : <i style={{fontSize: 40}}></i>)}</ExtendButton>
                     </div>*/}
+                
+                </MDBCol>
+                </MDBRow>
+
+                
                 </EventsPageContainer>
+                </MDBContainer>
             </div>
         );
     }
