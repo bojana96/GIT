@@ -18,7 +18,9 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
-import FooterPage from '../Footer/Footer';
+import Testimonials from '../Testimonials/Testimonials';
+
+
 
 
 const STATE_STORAGE_KEY = 'state';
@@ -94,15 +96,19 @@ class App extends React.Component {
               <Navigation/>
               <Router>
               <Switch>
+             
                   <Route path="/aboutUs" component={AboutUs}/>
                   <Route path="/donate" component={Donate}/>
                   <Route exact path="/events" render={() => <EventList events={events}/>}/>
                   <Route exact path="/addevent" render={() => <AddEvent events={this.state.events} addNewEvent={this.addNewEvent}/>}/>
                   <Route path="/contactUs" component={ContactUs}/>
+                  <Route path="/events" component={EventList}/>
+                  <Route path="/testimonials" component={Testimonials}/>
                   <Route path="/" exact component={HomePage}/>
               </Switch>
               </Router>
-            <FooterPage/>
+
+            
           </div>
   );
 }

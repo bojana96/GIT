@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import cover from "../../Images/upcoming.gif";
 import './AddEvent.css';
 import {  MDBRow, MDBCol, MDBIcon,  MDBInput, MDBBtn , MDBContainer } from "mdbreact";
+import Footer from '../Footer/Footer.js';
 
 
 
@@ -89,6 +90,7 @@ class EventList extends React.Component {
                 
                 </EventsPageContainer>
                 </MDBContainer>
+                <Footer/>
             </div>
         );
     }

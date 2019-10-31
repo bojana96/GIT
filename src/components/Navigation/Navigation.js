@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Nav, NavItem,NavLink} from 'reactstrap';
-import Logo from "../../Images/Empower.png";
+import Logo from "../../Images/empower.png";
 import {Redirect } from 'react-router-dom'
 import './Navigation.css';
 const Navigation = (props) => {
@@ -28,14 +28,8 @@ const Navigation = (props) => {
                     </a>
 
                 </NavItem>
-                <NavItem>
-                    <NavLink href="/">
-                        <b>Home</b>
-                    </NavLink>
-                </NavItem>
-
             <NavItem>
-                    <NavLink href="/aboutUs"><b>AboutUs</b></NavLink>
+                    <NavLink href="/aboutUs"><b>About</b></NavLink>
             </NavItem>
                 <NavItem>
                 <NavLink href="/donate"><b>Donate</b></NavLink>
@@ -44,7 +38,10 @@ const Navigation = (props) => {
                     <NavLink href="/events"><b>Events</b></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/contactUs"><b>ContactUs</b></NavLink>
+                    <NavLink href="/contactUs"><b>Contact</b></NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="/testimonials"><b>Testimonials</b></NavLink>
                 </NavItem>
             </Nav>
 
