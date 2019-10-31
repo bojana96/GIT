@@ -17,11 +17,15 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
+<<<<<<< HEAD
 import Testimonials from '../Testimonials/QuotesAndTestimonials';
 
 import Axios from 'axios';
 import Quotes from '../Quotes/Quotes';
 import QuotesAndTestimonials from '../Testimonials/QuotesAndTestimonials';
+=======
+import Testimonials from '../Testimonials/Testimonials';
+>>>>>>> 2ab73615e029a95fd643a00a5b8c70b5440254f5
 
 
 
@@ -34,22 +38,27 @@ class App extends React.Component {
             events: [
                 {
                     id: '1234567',
-                    name: 'Event1',
-                    description: 'First Event ',
-                    place: 'Public Room',
-                    date: '30/10/2019',
-                    time: '21:00'
+                    name: 'Конференција „200 Жени Претприемачки“',
+                    date: '21/11/2019',
+                    time: '21:00',
+                    place: 'Ragusa360 Rooftop',
+                    description: 'По трет пат во Македонија се случува настанот „Конференција за 200 Жени Претприемачки“, кој оваа година ќе биде збогатен и со избор на „Нај-жена на годината“. На конференцијата ќе присуствуваат: жени сопственички на бизнис, жени со неограничени претприемачки идеи, жени кои се менаџери, жени кои се лидери во својата професија (директорки во корпорации, докторки, наставнички, спортистки итн). Но, жени на кои им недостига охрабрување да го направат следниот чекор.  '
+
+                    
                 },
                 {
                     id: '1234568',
-                    name: 'Event2',
-                    description: ' ',
-                    place: 'Casa Bar',
-                    date: '30/11/2019',
-                    time: '21:00'
+                    name: 'Нашминкај се САМА III',
+                    date: '06/11/2019',
+                    time: '17:00',
+                    place: 'КАРИЕРА ПЛУС',
+                    description: ' Нашминкај се САМА III e еднодневен семинар во Скопје, наменет за сите девојки, дами и госпоѓи кои се заинтересирани не само да научат нови makeu up техники ,трендови и трикови, туку и да ги подобрат оние кои секојдневно ги применуваат ,притоа осознавајќи кој вид на шминка најдобро ги истакнува нивните црти и прилега на нивниот лик.'
+
+                   
                 },
                 {
                     id: '1234569',
+<<<<<<< HEAD
                     name: 'Event3',
                     description: 'Liquid',
                     place: ' ',
@@ -57,6 +66,15 @@ class App extends React.Component {
                     time: '21:00'
                 }],
                 
+=======
+                    name: 'Обука за ЈОГА Инструктори',
+                    date: '09/11/2019',
+                    time: '10:00' ,
+                    place: 'Yoga Studio Lotus ',           
+                    description: 'Јога Студио Лотос организира трета обука за јога инструктори. Курсот ќе се одржува за време на викендите (сабота и недела) во текот на три месеци.За да аплицирате потребно е да имате претходно искуство со јога.'
+                    
+                }]
+>>>>>>> 2ab73615e029a95fd643a00a5b8c70b5440254f5
         };
         this.addNewEvent = this.addNewEvent.bind(this);
     }
@@ -112,6 +130,10 @@ class App extends React.Component {
               </Switch>
               </Router>
 
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 2ab73615e029a95fd643a00a5b8c70b5440254f5
           </div>
   );
 }

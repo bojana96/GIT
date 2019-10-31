@@ -6,6 +6,7 @@ import Picture3 from '../../Images/Bojana.jpg';
 import OurPurpose from "./OurPurpose";
 import Team from "./Team";
 import Purpose from "./Purpose";
+import Footer from "../Footer/Footer";
 
 const AboutUs = () => {
     return (
@@ -13,6 +14,8 @@ const AboutUs = () => {
         <Purpose/>
   <br/>
         <Team/>
+
+        <Footer/>
   </div>
     );
 }

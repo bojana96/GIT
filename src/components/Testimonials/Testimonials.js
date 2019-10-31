@@ -123,7 +123,7 @@ class  Testimonials extends React.Component {
         </MDBCardBody>
       </MDBCard>
     </MDBCol>
-    <MDBCol lg="3" col-md="6" className="mb-lg-0 mb-4">
+    <MDBCol lg="3" col-md="3" className="mb-lg-0 mb-4">
       <MDBCard testimonial>
           <img
             src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"

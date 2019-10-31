@@ -2,10 +2,12 @@ import React from "react";
 import Picture from '../../Images/Women.jpg';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
 import './Donate.css';
+import Footer from "../Footer/Footer";
+
 
 const Donate = () => {
     return (
-
+        <div>
         <MDBContainer className="fixed">
             <h1> Donate Today </h1>
             <h1 className="h5 text-center mb-4"></h1>
@@ -67,7 +69,7 @@ const Donate = () => {
                             />
                         </div>
                         <div className="text-center">
-                            <MDBBtn outline color="secondary">
+                            <MDBBtn outline color="gray" onClick={() => {alert('Thank You! Successfully donated!')}}>
                                Submit <MDBIcon far icon="paper-plane" className="ml-1" />
                             </MDBBtn>
                         </div>
@@ -79,6 +81,9 @@ const Donate = () => {
             </MDBRow>
 
         </MDBContainer>
+
+        <Footer/>
+        </div>
 
 );
 

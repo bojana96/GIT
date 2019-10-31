@@ -1,5 +1,6 @@
 .futer{
     background-color:#ffcdd2;
+    opacity: 0.6;
     
 }
 nav a {
@@ -7,9 +8,3 @@ nav a {
     padding: 5px;
     
   }
- .desno{
-     
-     padding-left: 134px;
-     right: 0;
-     position: fixed;
- }

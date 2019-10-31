@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 import cover from "../../Images/upcoming.gif";
 import './AddEvent.css';
 import {  MDBRow, MDBCol, MDBIcon,  MDBInput, MDBBtn , MDBContainer } from "mdbreact";
+import Footer from '../Footer/Footer.js';
 
 
 
 
 
 const EventsPageContainer = styled.div`
-  background-color: #f2f2f2;
+  background-color:    #ffe6ff  ;
   padding: 10% 10%;
 `;
 
@@ -76,7 +77,7 @@ class EventList extends React.Component {
                     
                     <Hr/>
                     
-
+                    
                     <Link to='/addevent/'> <b>ADD EVENT</b></Link>
                     <Hr/>
                     {/* <div>
@@ -89,6 +90,7 @@ class EventList extends React.Component {
                 
                 </EventsPageContainer>
                 </MDBContainer>
+                <Footer/>
             </div>
         );
     }
