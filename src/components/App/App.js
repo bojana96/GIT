@@ -9,7 +9,6 @@ import Event from "../Event/Event";
 import AddEvent from "../Event/AddEvent";
 import EventList from "../Event/EventList";
 import Map from "../ContactUs/Map";
-
 import {
     BrowserRouter as Router,
     Switch,
@@ -18,8 +17,11 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
-import FooterPage from '../Footer/Footer';
-import Testimonials from '../Testimonials/Testimonials';
+import Testimonials from '../Testimonials/QuotesAndTestimonials';
+
+import Axios from 'axios';
+import Quotes from '../Quotes/Quotes';
+import QuotesAndTestimonials from '../Testimonials/QuotesAndTestimonials';
 
 
 
@@ -53,7 +55,8 @@ class App extends React.Component {
                     place: ' ',
                     date: '30/10/2019',
                     time: '21:00'
-                }]
+                }],
+                
         };
         this.addNewEvent = this.addNewEvent.bind(this);
     }
@@ -82,7 +85,11 @@ class App extends React.Component {
         }
         console.log(savedState, JSON.parse(savedState))
         setTimeout(()=>console.log(this.state.events),3000)
+
+      
+      
     }
+    
     render() {
         const { events } = this.state;
     // debugger
@@ -99,12 +106,12 @@ class App extends React.Component {
                   <Route exact path="/addevent" render={() => <AddEvent events={this.state.events} addNewEvent={this.addNewEvent}/>}/>
                   <Route path="/contactUs" component={ContactUs}/>
                   <Route path="/events" component={EventList}/>
-                  <Route path="/testimonials" component={Testimonials}/>
+                  <Route path="/testimonials" component={QuotesAndTestimonials}/>
                   <Route path="/" exact component={HomePage}/>
+                  <Route path='/quotes' component={Quotes}/>
               </Switch>
               </Router>
-<FooterPage/>
-            
+
           </div>
   );
 }
