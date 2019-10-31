@@ -1,8 +1,8 @@
 import React from "react";
 import ContactUs from "../ContactUs/ContactUs";
-
+import Citati from "./Quote"
 import Axios from "axios";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn, MDBContainer } from "mdbreact";
 import Quote from "./Quote";
 Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 class Quotes extends React.Component {
@@ -49,10 +49,15 @@ class Quotes extends React.Component {
         }
   
       </div>*/
-      
-        <ul className="list-group">
+      <div className="quote">
+         <br/>
+         <h3 className="h1-responsive font-weight-bold my-5">
+                        <i> Quotes </i>
+      </h3>
+        <ul className="list-group list-group-flush "style={{"border-width":"bold"}} >
           {listItems}
         </ul>
+        </div>
   
 
     );

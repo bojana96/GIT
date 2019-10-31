@@ -13,7 +13,7 @@ import Footer from '../Footer/Footer.js';
 
 
 const EventsPageContainer = styled.div`
-  background-color:    #ffe6ff  ;
+  background-color:    #E4CFBE  ;
   padding: 10% 10%;
 `;
 
@@ -90,7 +90,7 @@ class EventList extends React.Component {
                 
                 </EventsPageContainer>
                 </MDBContainer>
-                <Footer/>
+            
             </div>
         );
     }

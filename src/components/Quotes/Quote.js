@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default class Quote extends React.Component{
 
     constructor(props) {
@@ -17,13 +18,14 @@ export default class Quote extends React.Component{
     render() {
         return (
             <li  className="list-group-item">
+               
                 <div >
-
+            <br/>
                     <div className="row">
-                        <div className="col-md-3">
-                            <b> {this.props.quote.author}</b>
+                        <div className="col-md-2">
+                            <b> <i>{this.props.quote.author}</i></b>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-6">
                             <b>{this.props.quote.content}</b>
                         </div>
                     </div>

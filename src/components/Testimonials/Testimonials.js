@@ -11,19 +11,16 @@ class  Testimonials extends React.Component {
         clicked:false
       };
     } 
-   
-   
      render(){
-   
+
      return (
-
-
 <div > 
           <div>
-                    <h3 className="h1-responsive font-weight-bold my-5">
+              
+                    <h3 className="h1-responsive font-weight-bold my-5" color="#E4D0C0">
                         <i> Testimonials </i>
                     </h3>
-
+                
                     <MDBRow>
                         <MDBCol md="4" className="mb-md-0 mb-5">
                             <img src={Picture1} className="rounded-circle z-depth-1 img-fluid"/>
