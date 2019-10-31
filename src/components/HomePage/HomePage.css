@@ -69,4 +69,5 @@ p{
 .pozicija{
     position: relative;
     overflow: visible;
+    margin-top: -53px;
 }

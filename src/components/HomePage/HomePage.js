@@ -50,7 +50,7 @@ const HomePage = () => {
         <div className="text-right">
             <div className="pozicija">
                             <MDBBtn outline color="secondary">
-                               About <MDBIcon far icon="paper-plane" className="ml-1" />
+                             <a href="../../AboutUs/AboutUs"> About </a> <MDBIcon far icon="paper-plane" className="ml-1" />
                             </MDBBtn>
                             </div>
         </div>

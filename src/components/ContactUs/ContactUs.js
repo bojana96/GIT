@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 const ContactUs = () => {
     return (
         <div>
+        <div>
         <section className="my-5">
             <h2 className="h1-responsive font-weight-bold text-center my-5">
                 <i> Let us know how WE can help </i>
@@ -97,6 +98,8 @@ const ContactUs = () => {
                 </MDBCol>
             </MDBRow>
         </section>
+        </div>
+
         <Footer/>
         </div>
     );
