@@ -17,11 +17,12 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
-import Testimonials from '../Testimonials/QuotesAndTestimonials';
+
 
 import Axios from 'axios';
 import Quotes from '../Quotes/Quotes';
-import QuotesAndTestimonials from '../Testimonials/QuotesAndTestimonials';
+
+import QuotesAndStories from '../Testimonials/QuotesAndStories';
 
 
 
@@ -111,7 +112,7 @@ class App extends React.Component {
                   <Route exact path="/addevent" render={() => <AddEvent events={this.state.events} addNewEvent={this.addNewEvent}/>}/>
                   <Route path="/contactUs" component={ContactUs}/>
                   <Route path="/events" component={EventList}/>
-                  <Route path="/testimonials" component={QuotesAndTestimonials}/>
+                  <Route path="/stories" component={QuotesAndStories}/>
                   <Route path="/" exact component={HomePage}/>
                   <Route path='/quotes' component={Quotes}/>
               </Switch>
