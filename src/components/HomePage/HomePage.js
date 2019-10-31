@@ -31,21 +31,27 @@ const HomePage = () => {
         
         <div className="text">
           
-          <a href="https://facebook.com">
-            <FaFacebook size="2em" color="black"/>
-          </a> 
+        <a href="https://facebook.com">
+           <FaFacebook size="2em" color="black"/>
+            </a>
+            
+            <span> </span>
+          
+            <a href="https://instagram.com">
+              <FaInstagram size="2em" color="black"/>
+            </a>
+            <span></span>
+          
+            <a href="https://twitter.com">
+              <FaTwitter size="2em" color="black"/>
+            </a>
+          <span>
+            </span> 
+            
+            <a href=" https://www.linkedin.com/">
 
-          <a href="https://instagram.com">
-            <FaInstagram size="2em" color="black"/>
-          </a>
-
-          <a href="https://twitter.com">
-            <FaTwitter size="2em" color="black"/>
-          </a>
-
-          <a href=" https://www.linkedin.com/">
-          <FaLinkedin size="2em" color="black"/>
-          </a>
+            <FaLinkedin size="2em" color="black"/>
+            </a>
         </div>
         <div className="text-right">
             <div className="pozicija">

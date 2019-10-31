@@ -1,7 +1,9 @@
 import React from 'react';
 import { MDBContainer, MDBCol, MDBCard, MDBCardBody,MDBIcon,MDBRow } from 'mdbreact';
 
-
+import Picture1 from '../../Images/Dina.jpg';
+import Picture2 from '../../Images/Maja.jpg';
+import Picture3 from '../../Images/Bojana.jpg';
 class  Testimonials extends React.Component {
     constructor(props){
       super(props);
@@ -16,136 +18,77 @@ class  Testimonials extends React.Component {
      return (
 
 
-<MDBContainer className="testimonial">
+<div > 
+          <div>
+                    <h3 className="h1-responsive font-weight-bold my-5">
+                        <i> Testimonials </i>
+                    </h3>
 
-  <h2 className="h1-responsive font-weight-bold my-5">
-   <i>Testimonials</i> 
-  </h2>
-  <p className="dark-grey-text w-responsive mx-auto mb-5">
-   
-  </p>
-  <MDBRow className="text-center">
-    <MDBCol lg="3" md="12" className="mb-lg-0 mb-4">
-      <MDBCard testimonial>
-          <img
-            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-            alt=""
-            className="rounded-circle img-fluid"
-         
-       />
-        <MDBCardBody>
-          <h4 className="font-weight-bold mb-4">John Doe</h4>
-          <hr />
-          <p className="dark-grey-text mt-4">
-            <MDBIcon icon="quote-left" className="pr-2" />
-            Lorem ipsum dolor sit amet eos adipisci, consectetur
-            adipisicing elit.
-          </p>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol lg="3" md="12" className="mb-lg-0 mb-4">
-      <MDBCard testimonial>
-          <img
-            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-            alt=""
-            className="rounded-circle img-fluid"
-         
-       />
-        <MDBCardBody>
-          <h4 className="font-weight-bold mb-4">John Doe</h4>
-          <hr />
-          <p className="dark-grey-text mt-4">
-            <MDBIcon icon="quote-left" className="pr-2" />
-            Lorem ipsum dolor sit amet eos adipisci, consectetur
-            adipisicing elit.
-          </p>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol lg="3" md="12" className="mb-lg-0 mb-4">
-      <MDBCard testimonial>
-          <img
-            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-            alt=""
-            className="rounded-circle img-fluid"
-         
-       />
-        <MDBCardBody>
-          <h4 className="font-weight-bold mb-4">John Doe</h4>
-          <hr />
-          <p className="dark-grey-text mt-4">
-            <MDBIcon icon="quote-left" className="pr-2" />
-            Lorem ipsum dolor sit amet eos adipisci, consectetur
-            adipisicing elit.
-          </p>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    </MDBRow>
-    <br/>
-    <MDBRow className="text-center">
-    <MDBCol lg="3" md="12" className="mb-lg-0 mb-4">
-      <MDBCard testimonial>
-          <img
-            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-            alt=""
-            className="rounded-circle img-fluid"
-         
-       />
-        <MDBCardBody>
-          <h4 className="font-weight-bold mb-4">John Doe</h4>
-          <hr />
-          <p className="dark-grey-text mt-4">
-            <MDBIcon icon="quote-left" className="pr-2" />
-            Lorem ipsum dolor sit amet eos adipisci, consectetur
-            adipisicing elit.
-          </p>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol lg="3" col-md="6" className="mb-lg-0 mb-4">
-      <MDBCard testimonial>
-          <img
-            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-            alt=""
-            className="rounded-circle img-fluid"
-         
-       />
-        <MDBCardBody>
-          <h4 className="font-weight-bold mb-4">John Doe</h4>
-          <hr />
-          <p className="dark-grey-text mt-4">
-            <MDBIcon icon="quote-left" className="pr-2" />
-            Lorem ipsum dolor sit amet eos adipisci, consectetur
-            adipisicing elit.
-          </p>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-    <MDBCol lg="3" col-md="3" className="mb-lg-0 mb-4">
-      <MDBCard testimonial>
-          <img
-            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-            alt=""
-            className="rounded-circle img-fluid"
-         
-       />
-        <MDBCardBody>
-          <h4 className="font-weight-bold mb-4">John Doe</h4>
-          <hr />
-          <p className="dark-grey-text mt-4">
-            <MDBIcon icon="quote-left" className="pr-2" />
-            Lorem ipsum dolor sit amet eos adipisci, consectetur
-            adipisicing elit.
-          </p>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCol>
-  </MDBRow>
-  
+                    <MDBRow>
+                        <MDBCol md="4" className="mb-md-0 mb-5">
+                            <img src={Picture1} className="rounded-circle z-depth-1 img-fluid"/>
+                            <h4 className="font-weight-bold dark-grey-text my-4">
+                                Dina Poturovik
+                            </h4>
+                            <h6 className="text-uppercase grey-text mb-3">Graphic Designer </h6>
+                            <h5 className="text-primary  mb-3">Graphic Designer with 4 years of experience </h5>
+                        </MDBCol>
+                        <MDBCol md="4" className="mb-md-0 mb-5">
+                            <img src={Picture2} className="rounded-circle z-depth-1 img-fluid"/>
+                            <h4 className="font-weight-bold dark-grey-text my-4">Maja Naumoska</h4>
 
-  </MDBContainer>
+                            <h6 className="text-uppercase grey-text mb-3">
+                                Front-end Developer
+                            </h6>
+                            <h5 className="text-primary  mb-3">Front-end Developer with 4 years of experience </h5>
+
+
+                        </MDBCol>
+                        <MDBCol md="4" className="mb-md-0 mb-5">
+                            <img src={Picture3} className="rounded-circle z-depth-1 img-fluid" alt="sample Avatar"/>
+                            <h4 className="font-weight-bold dark-grey-text my-4">
+                                Bojana Peshovska
+                            </h4>
+                            <h6 className="text-uppercase grey-text mb-3">Back-End Developer</h6>
+                            <h5 className="text-primary  mb-3">Back-end Developer with 6 years of experience </h5>
+
+                        </MDBCol>
+                    </MDBRow>
+                    </div>
+                    <div>
+                    <MDBRow>
+                        <MDBCol md="4" className="mb-md-0 mb-5">
+                            <img src={Picture1} className="rounded-circle z-depth-1 img-fluid"/>
+                            <h4 className="font-weight-bold dark-grey-text my-4">
+                                Dina Poturovik
+                            </h4>
+                            <h6 className="text-uppercase grey-text mb-3">Graphic Designer </h6>
+                            <h5 className="text-primary  mb-3">Graphic Designer with 4 years of experience </h5>
+                        </MDBCol>
+                        <MDBCol md="4" className="mb-md-0 mb-5">
+                            <img src={Picture2} className="rounded-circle z-depth-1 img-fluid"/>
+                            <h4 className="font-weight-bold dark-grey-text my-4">Maja Naumoska</h4>
+
+                            <h6 className="text-uppercase grey-text mb-3">
+                                Front-end Developer
+                            </h6>
+                            <h5 className="text-primary  mb-3">Front-end Developer with 4 years of experience </h5>
+
+
+                        </MDBCol>
+                        <MDBCol md="4" className="mb-md-0 mb-5">
+                            <img src={Picture3} className="rounded-circle z-depth-1 img-fluid" alt="sample Avatar"/>
+                            <h4 className="font-weight-bold dark-grey-text my-4">
+                                Bojana Peshovska
+                            </h4>
+                            <h6 className="text-uppercase grey-text mb-3">Back-End Developer</h6>
+                            <h5 className="text-primary  mb-3">Back-end Developer with 6 years of experience </h5>
+
+                        </MDBCol>
+                    </MDBRow>
+
+                    </div>
+        </div>
      );
      }
     }

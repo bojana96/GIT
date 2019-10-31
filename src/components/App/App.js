@@ -54,11 +54,12 @@ class App extends React.Component {
                 },
                 {
                     id: '1234569',
-                    name: 'Event3',
-                    description: 'Liquid',
-                    place: ' ',
+                    name: 'Joга за жени',
                     date: '30/10/2019',
-                    time: '21:00'
+                    time: '21:00',
+                    place: 'Public Room',
+                    description: 'Обука за инструктор на јога во времетраењеод 3 месеци'
+                    
                 }],
                 
         };

@@ -49,11 +49,11 @@ class Quotes extends React.Component {
         }
   
       </div>*/
-      <div className="bla">
+      
         <ul className="list-group">
           {listItems}
         </ul>
-      </div>
+  
 
     );
   }

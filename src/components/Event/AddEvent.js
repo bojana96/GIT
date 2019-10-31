@@ -237,24 +237,6 @@ class AddEvent extends React.Component {
                                 success="right"
                             />
                             
-                            <MDBInput
-                                onChange={this.inputDescription}
-                                type="textarea"
-                                rows="3"
-                                label="Description"
-                                icon="pencil-alt"
-                                success="right"
-                            />
-                            <MDBInput
-                                onChange={this.inputPlace}
-                                label="Location"
-                                icon="map-marked-alt"
-                                group
-                                type="text"
-                                validate
-                                error="wrong"
-                                success="right"
-                            />
                             
                             <MDBInput
                             onChange={this.inputDate}
@@ -267,7 +249,7 @@ class AddEvent extends React.Component {
                                 success="right"
                             />
                             <MDBInput
-                                onChange={this.inputPlace}
+                                onChange={this.inputTime}
                                 label="00:00"
                                 icon="clock"
                                 group
@@ -276,6 +258,25 @@ class AddEvent extends React.Component {
                                 error="wrong"
                                 success="right"
                             />
+                            <MDBInput
+                                onChange={this.inputPlace}
+                                label="Location"
+                                icon="map-marked-alt"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
+                                success="right"
+                            />
+                            <MDBInput
+                                onChange={this.inputDescription}
+                                type="textarea"
+                                rows="3"
+                                label="Description"
+                                icon="pencil-alt"
+                                success="right"
+                            />
+                            
                         </div>
                         
                         </form>
