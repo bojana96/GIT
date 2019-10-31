@@ -12,7 +12,7 @@ import {  MDBRow, MDBCol, MDBIcon,  MDBInput, MDBBtn , MDBContainer } from "mdbr
 
 
 const EventsPageContainer = styled.div`
-  background-color: #f2f2f2;
+  background-color:    #ffe6ff  ;
   padding: 10% 10%;
 `;
 
@@ -76,7 +76,7 @@ class EventList extends React.Component {
                     
                     <Hr/>
                     
-
+                    
                     <Link to='/addevent/'> <b>ADD EVENT</b></Link>
                     <Hr/>
                     {/* <div>

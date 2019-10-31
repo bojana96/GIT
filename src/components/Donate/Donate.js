@@ -3,6 +3,7 @@ import Picture from '../../Images/Women.jpg';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
 import './Donate.css';
 
+
 const Donate = () => {
     return (
 
@@ -67,7 +68,7 @@ const Donate = () => {
                             />
                         </div>
                         <div className="text-center">
-                            <MDBBtn outline color="secondary">
+                            <MDBBtn outline color="gray" onClick={() => {alert('Thank You! Successfully donated!')}}>
                                Submit <MDBIcon far icon="paper-plane" className="ml-1" />
                             </MDBBtn>
                         </div>

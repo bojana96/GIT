@@ -5,14 +5,18 @@ import PropTypes from 'prop-types';
 import pic from "../../Images/download.png";
 
 const Card = styled.div`
-    margin: 10%;
-    width: 28%;
+    margin: 1.5%;
+    width: 30%;
     background-color: white;
       font-family: Vedana;
       cursor: pointer;
 `;
 
-const Image = styled.div``;
+const Image = styled.div`
+height: 100%; 
+width: 100%;
+object-fit: fill;
+`;
 
 const InfoContainer = styled.div`
   background-color: white;
@@ -24,7 +28,7 @@ const InfoContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-`
+`;
 
 const Title = styled.h1`
   color: #4A545A;
@@ -68,21 +72,24 @@ const Event = ({ event }) => {
 
         <Card onClick={"window.location='http://google.com';"}>
             <InfoContainer>
-                <Image>
+            {/* <Image>
                      <img src={pic}/>
-                </Image>
+                </Image> */}
+                
                 <Title>
                     {event.name}
                 </Title>
                 <Desc>
-                    {event.description}
+                    {event.description} 
+
                 </Desc>
                 <Date>
-                    {event.date} - {event.time}
+                    {event.date} - {event.time} ({event.place})
                 </Date>
 
             </InfoContainer>
         </Card>
+        
     )
 };
 

@@ -3,7 +3,9 @@ import './AddEvent.css';
 import _ from "lodash";
 import {  MDBRow, MDBCol, MDBIcon,  MDBInput, MDBBtn  } from "mdbreact";
 import { Fragment } from "react";
-import './Donate.css'
+import './Donate.css';
+import { withRouter } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 class AddEvent extends React.Component {
@@ -28,6 +30,8 @@ class AddEvent extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.isValidDate = this.isValidDate.bind(this);
         this.isValidTime = this.isValidTime.bind(this);
+        this.alertMessage = this.alertMessage.bind(this);
+
 
 
     }
@@ -50,6 +54,8 @@ class AddEvent extends React.Component {
             place,
             description
         });
+        const alert = this.alertMessage;
+        alert();
     }
 
     inputName(event) {
@@ -133,6 +139,11 @@ class AddEvent extends React.Component {
 
         return day > 0 && day <= monthLength[month - 1];
     }
+    
+    
+    alertMessage=()=>{alert('The event has been created!')}
+
+
 
     handleSubmit() {
 
@@ -215,7 +226,8 @@ class AddEvent extends React.Component {
                     <form>
 
                         <div className="grey-text">
-                            <MDBInput
+                            <MDBInput 
+                                onChange={this.inputName}
                                 label="Name"
                                 icon="calendar-check"
                                 group
@@ -224,25 +236,17 @@ class AddEvent extends React.Component {
                                 error="wrong"
                                 success="right"
                             />
+                            
                             <MDBInput
-                                label="DD/MM/YY"
-                                icon="calendar-alt"
-                                group
-                                type="text"
-                                validate
-                                error="wrong"
+                                onChange={this.inputDescription}
+                                type="textarea"
+                                rows="3"
+                                label="Description"
+                                icon="pencil-alt"
                                 success="right"
                             />
                             <MDBInput
-                                label="00:00"
-                                icon="clock"
-                                group
-                                type="text"
-                                validate
-                                error="wrong"
-                                success="right"
-                            />
-                            <MDBInput
+                                onChange={this.inputPlace}
                                 label="Location"
                                 icon="map-marked-alt"
                                 group
@@ -253,15 +257,27 @@ class AddEvent extends React.Component {
                             />
                             
                             <MDBInput
-                                type="textarea"
-                                rows="3"
-                                label="Description"
-                                icon="pencil-alt"
+                            onChange={this.inputDate}
+                                label="DD/MM/YY"
+                                icon="calendar-alt"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
+                                success="right"
+                            />
+                            <MDBInput
+                                onChange={this.inputPlace}
+                                label="00:00"
+                                icon="clock"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
+                                success="right"
                             />
                         </div>
-                        <div className="text-center">
-                            
-                        </div>
+                        
                         </form>
                 </MDBCol>
             </MDBRow>
@@ -275,9 +291,15 @@ class AddEvent extends React.Component {
                 </div> */}
                 <Fragment>
                     <MDBBtn color="primary" onClick={this.handleSubmit}>
+                        
                     <MDBIcon icon="plus-square" className="mr-1" /> Create
                     </MDBBtn>
                 </Fragment>
+                <Link to='/events/'> View full list of events </Link>
+
+                {/* <Link to="/events">
+                               
+                </Link> */}
             </div>
         );
     }
