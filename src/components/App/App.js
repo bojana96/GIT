@@ -18,7 +18,6 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
-import FooterPage from '../Footer/Footer';
 import Testimonials from '../Testimonials/Testimonials';
 
 
@@ -103,7 +102,7 @@ class App extends React.Component {
                   <Route path="/" exact component={HomePage}/>
               </Switch>
               </Router>
-<FooterPage/>
+
             
           </div>
   );

@@ -7,15 +7,66 @@
 }*/
 
 .background {
-    
-    background-image: url("./BackGround.jpg");
-    
-        
         height: 90vh;
-        width:auto;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         opacity:0.6;
     
+}
+.slika{
+     height: 100%;
+     width: 100%;
+}
+
+.name {
+   
+    position: fixed;
+    top: 120px;
+    right: 0;
+    left: 850px;
+    bottom: 0;
+    background-color: #E4D0C0;
+    opacity: 0.4;
+    overflow: hidden;
+}
+
+.tek{
+    position:absolute;
+    top: 150px;
+    margin-right:30px;
+    right:0;
+    bottom:0;
+    font-size: 34px;
+    color: #0e0e35;
+    overflow: hidden;
+}
+p{
+
+    position:absolute;
+    top: 259px;
+    margin-right:10px;
+    right:0;
+    bottom:0;
+    color: #52040e;
+    overflow: hidden;
+}
+
+.kopche{
+    position:absolute;
+    top: 259px;
+    margin-right:10px;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+.text{
+    margin-top:-39px;
+    overflow: visible;
+    position: relative;
+}
+.pozicija{
+    position: relative;
+    overflow: visible;
 }

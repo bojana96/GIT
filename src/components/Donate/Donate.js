@@ -2,10 +2,11 @@ import React from "react";
 import Picture from '../../Images/Women.jpg';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
 import './Donate.css';
+import Footer from "../Footer/Footer";
 
 const Donate = () => {
     return (
-
+        <div>
         <MDBContainer className="fixed">
             <h1> Donate Today </h1>
             <h1 className="h5 text-center mb-4"></h1>
@@ -79,6 +80,9 @@ const Donate = () => {
             </MDBRow>
 
         </MDBContainer>
+
+        <Footer/>
+        </div>
 
 );
 

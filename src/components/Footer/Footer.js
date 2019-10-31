@@ -5,7 +5,7 @@ import {FaFacebook} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import {FaTwitter} from "react-icons/fa";
 import {FaLinkedin} from "react-icons/fa";
-const FooterPage = () => {
+const Footer = () => {
   return (
     <div className="futer">
    <MDBCardFooter>
@@ -43,4 +43,4 @@ const FooterPage = () => {
   );
 }
 
-export default FooterPage;
+export default Footer;

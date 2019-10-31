@@ -1,9 +1,11 @@
 import React from "react";
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
 import Map from "./Map";
+import Footer from "../Footer/Footer";
 
 const ContactUs = () => {
     return (
+        <div>
         <section className="my-5">
             <h2 className="h1-responsive font-weight-bold text-center my-5">
                 <i> Let us know how WE can help </i>
@@ -95,6 +97,8 @@ const ContactUs = () => {
                 </MDBCol>
             </MDBRow>
         </section>
+        <Footer/>
+        </div>
     );
 }
 
