@@ -12,7 +12,7 @@ const Team= () => {
             <MDBCard className="text-center"  >
 
                     <h3 className="h1-responsive font-weight-bold my-5">
-                        <i>Our amazing team</i>
+                        <i>Our  team</i>
                     </h3>
 
                     <MDBRow>

@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import './Donate.css';
 import { withRouter } from 'react-router-dom';
 import {Link} from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 
 class AddEvent extends React.Component {
@@ -196,6 +197,7 @@ class AddEvent extends React.Component {
 
 
         return (
+            <div>
             <div className="add-event-container">
                 <div className="add-event-title lead grey-text w-responsive text-center mx-auto mb-5" style={{  fontSize: 40, width: 'bold' }}><b>Create an event:</b></div>
                 <hr/>
@@ -291,16 +293,26 @@ class AddEvent extends React.Component {
                     <button className="add-event-button" onClick={this.handleSubmit}>Add Event</button>
                 </div> */}
                 <Fragment>
-                    <MDBBtn color="primary" onClick={this.handleSubmit}>
+                <MDBBtn outline color="secondary" onClick={this.handleSubmit}>
+                     
                         
                     <MDBIcon icon="plus-square" className="mr-1" /> Create
                     </MDBBtn>
                 </Fragment>
-                <Link to='/events/'> View full list of events </Link>
-
+                <Fragment>
+                <MDBBtn outline color="secondary" >
+                     
+                        <Link to="/events/">Back to Events </Link>
+                     
+                     </MDBBtn>
+                     </Fragment>
                 {/* <Link to="/events">
                                
                 </Link> */}
+
+            
+            </div>
+            <Footer/>
             </div>
         );
     }

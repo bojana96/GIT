@@ -23,6 +23,7 @@ import Axios from 'axios';
 import Quotes from '../Quotes/Quotes';
 
 import QuotesAndStories from '../Testimonials/QuotesAndStories';
+import Carosel from "../Quotes/Carosel";
 
 
 
@@ -115,6 +116,8 @@ class App extends React.Component {
                   <Route path="/stories" component={QuotesAndStories}/>
                   <Route path="/" exact component={HomePage}/>
                   <Route path='/quotes' component={Quotes}/>
+                  <Route path='/carosel' component={Carosel}/>
+                  
               </Switch>
               </Router>
 

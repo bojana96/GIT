@@ -3,14 +3,13 @@ import { Nav, NavItem,NavLink} from 'reactstrap';
 import Logo from "../../Images/empower.png";
 import {Redirect } from 'react-router-dom'
 import './Navigation.css';
+
 const Navigation = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const toggle = () => setDropdownOpen(!dropdownOpen);
 
-    function imageClick() {
-
-    }
+    
     return (
         <div className="bla">
             <Nav>
@@ -42,6 +41,9 @@ const Navigation = (props) => {
                 </NavItem>
                 <NavItem>
                     <NavLink href="/contactUs"><b>Contact</b></NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="/carosel"><b>Chao</b></NavLink>
                 </NavItem>
                 
                 

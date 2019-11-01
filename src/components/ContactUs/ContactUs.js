@@ -98,6 +98,7 @@ const ContactUs = () => {
                 </MDBCol>
             </MDBRow>
         </section>
+        <Footer/>
         </div>
 
        

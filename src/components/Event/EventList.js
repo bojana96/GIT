@@ -7,13 +7,14 @@ import cover from "../../Images/upcoming.gif";
 import './AddEvent.css';
 import {  MDBRow, MDBCol, MDBIcon,  MDBInput, MDBBtn , MDBContainer } from "mdbreact";
 import Footer from '../Footer/Footer.js';
-
+import {Redirect} from 'react-router-dom';
 
 
 
 
 const EventsPageContainer = styled.div`
-  background-color:    #E4CFBE  ;
+  background-color:   white;
+  
   padding: 10% 10%;
 `;
 
@@ -43,6 +44,7 @@ const Hr = styled.hr`
 class EventList extends React.Component {
     constructor(props) {
         super(props);
+       
     }
 
 
@@ -78,7 +80,10 @@ class EventList extends React.Component {
                     <Hr/>
                     
                     
-                    <Link to='/addevent/'> <b>ADD EVENT</b></Link>
+                    <MDBBtn outline color="secondary">
+                            <Link to="/addevent/">Add Event </Link><MDBIcon far icon="plus-square" className="ml-1"/>
+                     </MDBBtn> 
+                            
                     <Hr/>
                     {/* <div>
                         <ExtendButton onClick={this.toggleExpanded}>{(this.state.expanded ? <i style={{fontSize: 50}}></i> : <i style={{fontSize: 40}}></i>)}</ExtendButton>
@@ -89,8 +94,9 @@ class EventList extends React.Component {
 
                 
                 </EventsPageContainer>
+                
                 </MDBContainer>
-            
+                <Footer/>
             </div>
         );
     }

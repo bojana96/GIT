@@ -7,10 +7,6 @@ import Logo from "../../Images/Logo.jpg";
 import Background from '../../Images/Webp.net-resizeimage (1).jpg';
 import './HomePage.css';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
-import {FaFacebook} from "react-icons/fa";
-import {FaInstagram} from "react-icons/fa";
-import {FaTwitter} from "react-icons/fa";
-import {FaLinkedin} from "react-icons/fa";
 
 const HomePage = () => {
     return (
@@ -36,7 +32,6 @@ const HomePage = () => {
                             </MDBBtn>
                             </div>
         </div>
-
         </div>
     );
 }

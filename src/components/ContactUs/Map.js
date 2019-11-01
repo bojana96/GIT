@@ -2,6 +2,9 @@ import React,{ useState } from 'react'
 import MapGL, {GeolocateControl } from 'react-map-gl'
 
 import 'mapbox-gl/dist/mapbox-gl.css'
+import ReactMapGL, {Marker} from 'react-map-gl';
+import {MDBIcon} from 'mdbreact';
+import { Icon } from 'antd';
 
 const TOKEN="pk.eyJ1IjoiYm9qYW5hcCIsImEiOiJjazJiczk3bXMwM3VrM2lxbWdqMnI4bDY0In0.lCOT5Ub8GqXQCiI7EDgbRw"
 
@@ -18,7 +21,8 @@ const Map = () => {
         height: 400,
         latitude: 42.0050,
         longitude: 21.4408,
-        zoom: 12
+        zoom: 13,
+        
     })
 
     const _onViewportChange = viewport => setViewPort({...viewport, transitionDuration: 3000 })
@@ -37,6 +41,14 @@ const Map = () => {
                     positionOptions={{enableHighAccuracy: true}}
                     trackUserLocation={true}
                 />
+        
+       <Marker
+    longitude={21.416259}
+    latitude={41.999495}
+    
+  > 
+  <MDBIcon fb icon="map-marker"></MDBIcon>
+    </Marker>
             </MapGL>
         </div>
     )
