@@ -235,9 +235,14 @@ class AddEvent extends React.Component {
                                 success="right"
                             />
                             
+                            
                             <MDBInput
                             onChange={this.inputDate}
+<<<<<<< HEAD
                                 label="DD/MM/YYYY"
+=======
+                                label="DD/MM/YY"
+>>>>>>> 1170dbe06d8357237d788fb53572e6f436b385fa
                                 icon="calendar-alt"
                                 group
                                 type="text"
@@ -245,7 +250,11 @@ class AddEvent extends React.Component {
                                 error="wrong"
                                 success="right"
                             />
+<<<<<<< HEAD
                              <MDBInput
+=======
+                            <MDBInput
+>>>>>>> 1170dbe06d8357237d788fb53572e6f436b385fa
                                 onChange={this.inputTime}
                                 label="00:00"
                                 icon="clock"
@@ -273,7 +282,11 @@ class AddEvent extends React.Component {
                                 icon="pencil-alt"
                                 success="right"
                             />
+<<<<<<< HEAD
                            
+=======
+                            
+>>>>>>> 1170dbe06d8357237d788fb53572e6f436b385fa
                         </div>
                         
                         </form>

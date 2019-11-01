@@ -9,7 +9,7 @@ import Donate from './Donate.css';
 const Card = styled.div`
     margin: 1.5%;
     width: 30%;
-    background-color: white;
+    background-color: #E4CFBE;
       font-family: Vedana;
       cursor: pointer;
 `;
@@ -51,7 +51,7 @@ const Date = styled.h1`
   color: #8597A3;
   font-size: 13px;
   display: flex;
-  background-color: #EAF0F4;
+  background-color: #E4CFBE;
   padding: 3px 8px;
 
 `;
@@ -59,7 +59,7 @@ const Date = styled.h1`
 const Place = styled.h1`
  color: #8597A3;
   font-size: 13px;
-  background-color: #EAF0F4;
+  background-color: #E4CFBE;
   padding: 3px 8px;
 
 

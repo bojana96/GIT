@@ -20,7 +20,7 @@ const HomePage = () => {
              <div className="name">
              </div>   
              <h6 className="tek"> BE THE CHANGE YOU WANT <br/>TO SEE IN THE WORLD !!! </h6>
-             <div className="parafraf">
+             <div className="paragraf">
              <p><i><b> <b>Empowering women </b> means giving them means to be financially <br/>
               and intellectually independent in their choices on <br/>
                one side, and on the other side,
@@ -29,28 +29,10 @@ const HomePage = () => {
                 </div>
         </div>
         
-        <div className="text">
-          
-          <a href="https://facebook.com">
-            <FaFacebook size="2em" color="black"/>
-          </a> 
-
-          <a href="https://instagram.com">
-            <FaInstagram size="2em" color="black"/>
-          </a>
-
-          <a href="https://twitter.com">
-            <FaTwitter size="2em" color="black"/>
-          </a>
-
-          <a href=" https://www.linkedin.com/">
-          <FaLinkedin size="2em" color="black"/>
-          </a>
-        </div>
         <div className="text-right">
             <div className="pozicija">
                             <MDBBtn outline color="secondary">
-                               About <MDBIcon far icon="paper-plane" className="ml-1" />
+                             <a href="../../AboutUs/AboutUs"> About </a> <MDBIcon far icon="paper-plane" className="ml-1" />
                             </MDBBtn>
                             </div>
         </div>

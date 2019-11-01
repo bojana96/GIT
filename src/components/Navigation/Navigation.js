@@ -38,11 +38,12 @@ const Navigation = (props) => {
                     <NavLink href="/events"><b>Events</b></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/contactUs"><b>Contact</b></NavLink>
+                    <NavLink href="/stories"><b>Stories</b></NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/testimonials"><b>Testimonials</b></NavLink>
+                    <NavLink href="/contactUs"><b>Contact</b></NavLink>
                 </NavItem>
+                
                 
             </Nav>
 

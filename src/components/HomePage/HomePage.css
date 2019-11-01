@@ -15,7 +15,7 @@
     
 }
 .slika{
-     height: 100%;
+     height: 104%;
      width: 100%;
 }
 
@@ -37,15 +37,16 @@
     margin-right:30px;
     right:0;
     bottom:0;
-    font-size: 34px;
+    font-size:60px;
     color: #0e0e35;
     overflow: hidden;
 }
-p{
+.paragraf{
 
     position:absolute;
-    top: 259px;
+    top: 357px;
     margin-right:10px;
+    font-size:30px;
     right:0;
     bottom:0;
     color: #52040e;
@@ -61,12 +62,13 @@ p{
     overflow: hidden;
 }
 
-.text{
+.linkovi{
     margin-top:-39px;
     overflow: visible;
-    position: relative;
+    position: absolute;
 }
 .pozicija{
     position: relative;
     overflow: visible;
+    margin-top: -53px;
 }

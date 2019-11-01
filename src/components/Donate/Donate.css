@@ -1,11 +1,10 @@
 .fixed{
     max-width: 800px;
-  
     margin-top: 145px;
 }
 
 .pic{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     height: 700px;
