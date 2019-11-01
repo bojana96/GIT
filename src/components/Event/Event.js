@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 // import pic from "../../Images/picName.jpg";
 import pic from "../../Images/download.png";
+import {Link} from 'react-router-dom';
+import Donate from './Donate.css';
 
 const Card = styled.div`
     margin: 1.5%;
@@ -86,6 +88,7 @@ const Event = ({ event }) => {
                 <Date>
                     {event.date} - {event.time} ({event.place})
                 </Date>
+                {/* <a className="details" href = "https://www.facebook.com/events/451291865732291/">Read more..</a> */}
 
             </InfoContainer>
         </Card>

@@ -17,13 +17,20 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
+<<<<<<< HEAD
+import QuotesAndTestimonials from "../Testimonials/QuotesAndTestimonials";
+=======
 
 
 import Axios from 'axios';
 import Quotes from '../Quotes/Quotes';
 
 import QuotesAndStories from '../Testimonials/QuotesAndStories';
+<<<<<<< HEAD
 import Carosel from "../Quotes/Carosel";
+=======
+>>>>>>> 1170dbe06d8357237d788fb53572e6f436b385fa
+>>>>>>> 03627265468a2ef11a74215d31560dfc3548f1b5
 
 
 
@@ -56,6 +63,14 @@ class App extends React.Component {
                 },
                 {
                     id: '1234569',
+<<<<<<< HEAD
+                    name: 'Обука за ЈОГА Инструктори',
+                    date: '09/11/2019',
+                    time: '10:00' ,
+                    place: 'Yoga Studio Lotus ',           
+                    description: 'Јога Студио Лотос организира трета обука за јога инструктори. Курсот ќе се одржува за време на викендите (сабота и недела) во текот на три месеци.За да аплицирате потребно е да имате претходно искуство со јога.'
+                }]
+=======
                     name: 'Joга за жени',
                     date: '30/10/2019',
                     time: '21:00',
@@ -63,6 +78,7 @@ class App extends React.Component {
                     description: 'Обука за инструктор на јога во времетраењеод 3 месеци'
                     
                 }],
+>>>>>>> 1170dbe06d8357237d788fb53572e6f436b385fa
                 
         };
         this.addNewEvent = this.addNewEvent.bind(this);
@@ -115,9 +131,12 @@ class App extends React.Component {
                   <Route path="/events" component={EventList}/>
                   <Route path="/stories" component={QuotesAndStories}/>
                   <Route path="/" exact component={HomePage}/>
+<<<<<<< HEAD
                   <Route path='/quotes' component={Quotes}/>
                   <Route path='/carosel' component={Carosel}/>
                   
+=======
+>>>>>>> 03627265468a2ef11a74215d31560dfc3548f1b5
               </Switch>
               </Router>
 

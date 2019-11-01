@@ -56,7 +56,7 @@ const ContactUs = () => {
                                 />
                             </div>
                             <div className="text-center">
-                                <MDBBtn outline color="secondary">
+                                <MDBBtn outline color="secondary" onClick={() => {alert('Your message has been sent')}}>
                                     Submit <MDBIcon far icon="paper-plane" className="ml-1" />
                                 </MDBBtn>
                             </div>

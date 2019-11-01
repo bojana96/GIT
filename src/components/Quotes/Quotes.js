@@ -42,6 +42,11 @@ class Quotes extends React.Component {
     });
 
     return (
+<<<<<<< HEAD
+      
+      <div className="bla">
+        <ul className="list-group">
+=======
       /*<div className="col">
         <h1>Quotes</h1>
         
@@ -58,6 +63,7 @@ class Quotes extends React.Component {
       </h3>
       </div>
         <ul className="list-group list-group-flush "style={{"border-width":"bold"}} >
+>>>>>>> 1170dbe06d8357237d788fb53572e6f436b385fa
           {listItems}
           
         </ul>
