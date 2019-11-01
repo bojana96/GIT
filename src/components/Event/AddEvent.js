@@ -26,7 +26,6 @@ class AddEvent extends React.Component {
         this.inputPlace = this.inputPlace.bind(this);
         this.inputDescription = this.inputDescription.bind(this);
         this.addEvent = this.addEvent.bind(this);
-        this.onTypeChange = this.onTypeChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.isValidDate = this.isValidDate.bind(this);
         this.isValidTime = this.isValidTime.bind(this);
@@ -94,12 +93,7 @@ class AddEvent extends React.Component {
         });
     }
 
-    onTypeChange(event) {
-        this.setState({
-            ...this.state,
-            eventType: event.target.value
-        });
-    }
+    
 
     isValidTime(myTime) {
         let timeValue = myTime;
@@ -149,36 +143,39 @@ class AddEvent extends React.Component {
 
         let valid = true;
 
-        // const name = this.state.name;
-        // const date = this.state.date;
-        // const time = this.state.time;
-        // const description = this.state.description;
+        const name = this.state.name;
+        const date = this.state.date;
+        const time = this.state.time;
+        const place = this.state.place;
+        const description = this.state.description;
 
-        // if (!name || !date || !time || !description) {
-        //     this.setState({
-        //         ...this.state,
-        //         errorMessage: "Please fill in all required fields to login."
-        //     });
-        //     valid = false;
-        // } else if (description.length > 150) {
-        //     this.setState({
-        //         ...this.state,
-        //         errorMessage: "Your description is too long"
-        //     });
-        //     valid = false;
-        // } else if (!this.isValidDate(date)) {
-        //     this.setState({
-        //         ...this.state,
-        //         errorMessage: "Invalid date format"
-        //     });
-        //     valid = false;
-        // } else if (!this.isValidTime(time)) {
-        //     this.setState({
-        //         ...this.state,
-        //         errorMessage: "Invalid time format"
-        //     });
-        //     valid = false;
-        // }
+        if (!name || !date || !time || !description || !place) {
+            this.setState({
+                ...this.state,
+                errorMessage: "Please fill in all required fields to login."
+            });
+            valid = false;
+        } else if (description.length > 150) {
+            this.setState({
+                ...this.state,
+                errorMessage: "Your description is too long"
+            });
+            valid = false;
+        } 
+        else if (!this.isValidDate(date)) {
+            this.setState({
+                ...this.state,
+                errorMessage: "Invalid date format"
+            });
+            valid = false;
+        } 
+        else if (!this.isValidTime(time)) {
+            this.setState({
+                ...this.state,
+                errorMessage: "Invalid time format"
+            });
+            valid = false;
+        }
 
         if (valid) {
             const add = this.addEvent;
@@ -191,7 +188,6 @@ class AddEvent extends React.Component {
 
     render() {
 
-
         const { errorMessage } = this.state.errorMessage;
 
 
@@ -200,9 +196,7 @@ class AddEvent extends React.Component {
                 <div className="add-event-title lead grey-text w-responsive text-center mx-auto mb-5" style={{  fontSize: 40, width: 'bold' }}><b>Create an event:</b></div>
                 <hr/>
 
-                <div>
-                    <span style={{ color: 'red', fontSize: 14 }}>{errorMessage}</span>
-                </div>
+                
                 {/* <div className="lead grey-text w-responsive text-center mx-auto mb-5">
                     Name: <input className="add-event-options" placeholder="Add a short, clear name" type='text'
                                  name='name'
@@ -221,7 +215,11 @@ class AddEvent extends React.Component {
                                         value={this.state.description} onChange={this.inputDescription} required/><br/>
                 </div> */}
             <h1 className="h5 text-center mb-4">  </h1>
+            <div>
+                <span style={{color: "red"}} >{this.state.errorMessage}</span>
+                </div>
             <MDBRow>
+            
                 <MDBCol md="6">
                     <form>
 
@@ -238,11 +236,23 @@ class AddEvent extends React.Component {
                             />
                             
                             <MDBInput
-                                onChange={this.inputDescription}
-                                type="textarea"
-                                rows="3"
-                                label="Description"
-                                icon="pencil-alt"
+                            onChange={this.inputDate}
+                                label="DD/MM/YYYY"
+                                icon="calendar-alt"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
+                                success="right"
+                            />
+                             <MDBInput
+                                onChange={this.inputTime}
+                                label="00:00"
+                                icon="clock"
+                                group
+                                type="text"
+                                validate
+                                error="wrong"
                                 success="right"
                             />
                             <MDBInput
@@ -255,27 +265,15 @@ class AddEvent extends React.Component {
                                 error="wrong"
                                 success="right"
                             />
-                            
                             <MDBInput
-                            onChange={this.inputDate}
-                                label="DD/MM/YY"
-                                icon="calendar-alt"
-                                group
-                                type="text"
-                                validate
-                                error="wrong"
+                                onChange={this.inputDescription}
+                                type="textarea"
+                                rows="3"
+                                label="Description"
+                                icon="pencil-alt"
                                 success="right"
                             />
-                            <MDBInput
-                                onChange={this.inputPlace}
-                                label="00:00"
-                                icon="clock"
-                                group
-                                type="text"
-                                validate
-                                error="wrong"
-                                success="right"
-                            />
+                           
                         </div>
                         
                         </form>

@@ -41,14 +41,7 @@ class Quotes extends React.Component {
     });
 
     return (
-      /*<div className="col">
-        <h1>Quotes</h1>
-        
-        {this.state.quotes.map(quote => <div>{quote.content} {quote.author} </div>
-        )
-        }
-  
-      </div>*/
+      
       <div className="bla">
         <ul className="list-group">
           {listItems}

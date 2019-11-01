@@ -17,15 +17,7 @@ import {
 } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import ContactUs from "../ContactUs/ContactUs";
-<<<<<<< HEAD
-import Testimonials from '../Testimonials/QuotesAndTestimonials';
-
-import Axios from 'axios';
-import Quotes from '../Quotes/Quotes';
-import QuotesAndTestimonials from '../Testimonials/QuotesAndTestimonials';
-=======
-import Testimonials from '../Testimonials/Testimonials';
->>>>>>> 2ab73615e029a95fd643a00a5b8c70b5440254f5
+import QuotesAndTestimonials from "../Testimonials/QuotesAndTestimonials";
 
 
 
@@ -58,23 +50,13 @@ class App extends React.Component {
                 },
                 {
                     id: '1234569',
-<<<<<<< HEAD
-                    name: 'Event3',
-                    description: 'Liquid',
-                    place: ' ',
-                    date: '30/10/2019',
-                    time: '21:00'
-                }],
-                
-=======
                     name: 'Обука за ЈОГА Инструктори',
                     date: '09/11/2019',
                     time: '10:00' ,
                     place: 'Yoga Studio Lotus ',           
                     description: 'Јога Студио Лотос организира трета обука за јога инструктори. Курсот ќе се одржува за време на викендите (сабота и недела) во текот на три месеци.За да аплицирате потребно е да имате претходно искуство со јога.'
-                    
                 }]
->>>>>>> 2ab73615e029a95fd643a00a5b8c70b5440254f5
+                
         };
         this.addNewEvent = this.addNewEvent.bind(this);
     }
@@ -126,14 +108,9 @@ class App extends React.Component {
                   <Route path="/events" component={EventList}/>
                   <Route path="/testimonials" component={QuotesAndTestimonials}/>
                   <Route path="/" exact component={HomePage}/>
-                  <Route path='/quotes' component={Quotes}/>
               </Switch>
               </Router>
 
-<<<<<<< HEAD
-=======
-            
->>>>>>> 2ab73615e029a95fd643a00a5b8c70b5440254f5
           </div>
   );
 }
